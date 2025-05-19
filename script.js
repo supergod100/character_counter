@@ -18,4 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 初期表示時にもカウントを更新
     updateCounts();
+});
+
+// フォントサイズの変更機能
+const fontSizeInput = document.getElementById('font-size');
+const fontSizeValue = document.getElementById('font-size-value');
+const textInput = document.getElementById('text-input');
+
+fontSizeInput.addEventListener('input', function() {
+    const size = this.value;
+    textInput.style.fontSize = `${size}px`;
+    fontSizeValue.textContent = `${size}px`;
 }); 

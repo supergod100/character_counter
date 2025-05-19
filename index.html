@@ -11,6 +11,11 @@
         <h1>文字数カウンター</h1>
         <div class="counter-box">
             <textarea id="text-input" placeholder="ここにテキストを入力してください..."></textarea>
+            <div class="font-size-control">
+                <label for="font-size">フォントサイズ</label>
+                <input type="range" id="font-size" min="12" max="32" value="16" step="1">
+                <span id="font-size-value">16px</span>
+            </div>
             <div class="stats">
                 <div class="stat-item">
                     <span class="label">文字数（スペース含む）:</span>
